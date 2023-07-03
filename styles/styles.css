@@ -7,7 +7,8 @@
 
   /** header styes */
 .header{
-    background-image: url(../images/image\ 1.png);
+  background: rgb(32,32,32);
+  background: linear-gradient(190deg, rgba(32,32,32,1) 45%, rgba(0,0,0,1) 100%); 
     height: 100vh;
     background-size: cover;
     background-attachment: fixed;
@@ -50,13 +51,13 @@ align-items: center;
   /** sections proyects */
 
   .proyects{
-    background-image: url(../images/image\ 3.png);
+    background: rgb(32,32,32);
+    background: linear-gradient(190deg, rgba(32,32,32,1) 45%, rgba(0,0,0,1) 100%); 
     height: 100vh;
+    background-attachment: fixed;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-position: center;
-    background-attachment: fixed;
   }
 
   .proyects-title{
@@ -85,67 +86,40 @@ margin-bottom: 40px;
 
   /* contact */
 .contact{
-    background-image: url(../images/image\ 3.png);
-    height: 100vh;
+   
+  background: rgb(32,32,32);
+  background: linear-gradient(190deg, rgba(32,32,32,1) 45%, rgba(0,0,0,1) 100%); 
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-position: center;
-    background-attachment: fixed;   
-}
-
-.contact-title{
-    color: #fff;
-    font-family: fungis;
-    font-size: 40px;
-    font-family: fungis;
-color: #fff;
-padding-left: 20px;
-margin-bottom: 20px;
-}
-.contact-form{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 40vh;
+    background-attachment: fixed;
     
 }
 
-.text{
-    height: 227px;
-    width: 292px;
-    padding-top: 60px;
 
-background: rgba(217, 217, 217, 0.2);
-border-radius: 3px;
-    font-family: fungis;
-color: #fff;
-padding-left: 20px;
-text-align: start;
-border: none;
+.contact-title{
+  color: #fff;
+  font-family: fungis;
+  font-size: 40px
+}
+.contact-section{
+  margin:30px 0px 80px 0px;
+}
+.contact-sections{
+background-color: #fff;
+  font-family: fungis;
+  border: 1px solid #fff;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 }
 
-.text1{width: 292px;
-    height: 53px;
-    background: rgba(217, 217, 217, 0.2);
-    border-radius: 3px;
-    font-family: fungis;
-color: #fff;
-padding-left: 20px;
-border: none;
-
-}
-
-.contact-form button{
-    font-family: fungis;
-
-    width: 292px;
-height: 53px;
-background: #FFC500;
-border-radius: 3px;
-font-size: 30px;
-border: none;
-padding: 10px;
+.contact-sections-text{
+margin-left: 20px;
 }
 
   /* contact */
@@ -153,28 +127,18 @@ padding: 10px;
 /* footer */
 
 footer{
-  background-image: url(../images/image\ 3.png);
-  height: 20vh;
+  height: 10vh;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  
+  background: rgb(32,32,32);
+  background: linear-gradient(190deg, rgba(32,32,32,1) 45%, rgba(0,0,0,1) 100%); 
+  background-attachment: fixed;
   font-family: fungis;
+  justify-content: center;
   align-items: center;
-  background-position: center;
-  background-attachment: fixed;   
   color: #fff;
 }
 
-.footer-ico{
- width: 30vw;
- display: flex;
- justify-content: space-around;
- 
-}
-
-.footer-ico a{
-  color: #fff;
-}
 
 
 
@@ -185,11 +149,6 @@ footer{
 }
 
 @media screen and (min-width:800px) {
-  .header{
-    background-position: center;
-    background-size:cover;
-    background-image: url(../image/arian-darvishi-wh-RPfR_3_M-unsplash.jpg);
-  }
 
 .proyect_container{
   display: flex;
@@ -212,20 +171,31 @@ footer{
   scale: 1.2;
   z-index: 1000;
 }
-  .text1{
-    width: 600px;
-  }
+.contact-sections{
+  width: 300px;
 
-  .text{
-    width: 600px;
-  }
-  .contact-form button{
-    width: 600px;
-  }
+}
+.contact-section{
+  display: flex;
+  justify-content: space-around;
+  align-content: space-around;
+
+  flex-wrap: wrap;
+
+}
 }
 
 @media screen and (min-width:1000px){
   .header_text{
     scale: 2;
+  }
+  .contact-sections{
+    width: 500px;
+    height: 100px;
+    display: flex;
+ 
+  }
+
+  .contact-sections svg{
   }
 }
